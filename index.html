@@ -1,20 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Meesho Clone</title>
+<meta charset="UTF-8">
+<title>Myntra Clone</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>🛍️ Meesho Clone Store</h1>
-<a href="cart.html">🛒 Cart</a>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">🛍 Myntra Clone</div>
+
+    <input type="text" placeholder="Search for products, brands...">
+
+    <div class="nav-right">
+        <a href="#">❤️ Wishlist</a>
+        <a href="cart.html">🛒 Cart</a>
+        <a href="login.html">👤 Login</a>
+    </div>
 </header>
 
-<div id="product-list"></div>
+<!-- HERO BANNER -->
+<div class="banner">
+    <img src="https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg">
+</div>
 
-<script src="products.js"></script>
+<!-- CATEGORY IMAGES -->
+<h2 class="title">Top Categories</h2>
+
+<div class="categories">
+
+    <div>
+        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg">
+        <p>Men</p>
+    </div>
+
+    <div>
+        <img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+        <p>Women</p>
+    </div>
+
+    <div>
+        <img src="https://images.pexels.com/photos/267202/pexels-photo-267202.jpeg">
+        <p>Shoes</p>
+    </div>
+
+    <div>
+        <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg">
+        <p>Watches</p>
+    </div>
+
+</div>
+
+<!-- PRODUCTS -->
+<h2 class="title">Trending Products</h2>
+
+<div class="products" id="product-list"></div>
+
 <script src="script.js"></script>
 
 </body>
