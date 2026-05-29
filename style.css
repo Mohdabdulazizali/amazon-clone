@@ -1,48 +1,95 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f5f5;
+ body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f5f5;
 }
 
-header {
-  background: #ff3f6c;
-  color: white;
-  padding: 15px;
-  text-align: center;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px gray;
 }
 
-header input {
-  padding: 8px;
-  width: 200px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
+.navbar input {
+    width: 40%;
+    padding: 8px;
 }
 
+.nav-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categories div {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.categories img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
 .products {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  width: 180px;
+    background: white;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px gray;
 }
 
 .card img {
-  width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 button {
-  background: #ff3f6c;
-  color: white;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 5px;
+    background: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
 }
